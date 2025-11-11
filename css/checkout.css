@@ -1,0 +1,162 @@
+@import url(./light.css);
+body {
+  font-family: "Vazirmatn", sans-serif;
+  background: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+  margin: 0;
+  padding: 0;
+}
+.ai-header {
+  background: var(--md-sys-color-surface);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--md-sys-color-primary);
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--md-sys-color-on-surface);
+  transition: color 0.2s;
+}
+.nav a:hover {
+  color: var(--md-sys-color-primary);
+}
+
+/* 🔹 CTA Button */
+.cta-btn {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.cta-btn:hover {
+  background: var(--md-sys-color-on-primary);
+  color: var(--md-sys-color-primary);
+  border: 1px solid var(--md-sys-color-primary);
+}
+
+.checkout-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1100px;
+  margin: 50px auto;
+  gap: 30px;
+  background: var(--md-sys-color-surface-container);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.checkout-form, .checkout-summary {
+  background: var(--md-sys-color-surface);
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.checkout-form h2,
+.checkout-summary h2 {
+  margin-bottom: 20px;
+  color: var(--md-sys-color-primary);
+  font-size: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--md-sys-color-outline-variant);
+  background: var(--md-sys-color-surface-container-low);
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--md-sys-color-primary);
+  background: var(--md-sys-color-primary-container);
+}
+
+.pay-btn {
+  margin-top: 20px;
+  width: 100%;
+  background: var(--md-sys-color-secondary);
+  color: var(--md-sys-color-on-secondary);
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pay-btn:hover {
+  background: var(--md-sys-color-secondary-fixed-dim);
+}
+
+.checkout-summary .course-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.checkout-summary .total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: var(--md-sys-color-primary);
+  font-weight: bold;
+}
+
+/* 📱 ریسپانسیو */
+@media (max-width: 768px) {
+  .checkout-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,192 @@
+@import url(./light.css);
+body {
+  font-family: "Vazirmatn", sans-serif;
+  background: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-surface);
+  margin: 0;
+  padding: 0;
+}
+
+/* 🌟 Header */
+.ai-header {
+  background: var(--md-sys-color-surface);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--md-sys-color-primary);
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--md-sys-color-on-surface);
+  transition: color 0.2s;
+  
+}
+.nav a:hover {
+  color: var(--md-sys-color-primary);
+}
+
+/* 🔹 CTA Button */
+.cta-btn {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.cta-btn:hover {
+  background: var(--md-sys-color-on-primary);
+  color: var(--md-sys-color-primary);
+  border: 1px solid var(--md-sys-color-primary);
+}
+
+/* 🌟 Hero */
+.hero {
+  background: linear-gradient(135deg, var(--md-sys-color-primary), var(--md-sys-color-secondary));
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.hero .cta-btn.big {
+  padding: 0.9rem 2.2rem;
+  font-size: 1rem;
+  border-radius: 14px;
+}
+
+/* 🌟 Courses Section */
+.courses {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--md-sys-color-primary);
+  margin-bottom: 2rem;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.course-card {
+  background: var(--md-sys-color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+.course-card:hover {
+  transform: translateY(-6px);
+}
+
+.course-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: right;
+}
+
+.card-body h3 {
+  font-size: 1.1rem;
+  color: var(--md-sys-color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+  color: var(--md-sys-color-on-surface);
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--md-sys-color-secondary);
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* 🔹 Add to Cart Button */
+.add-cart-btn {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: var(--transition);
+}
+.add-cart-btn:hover {
+  background: var(--md-sys-color-on-primary);
+  color: var(--md-sys-color-primary);
+  border: 1px solid var(--md-sys-color-primary);
+}
+
+/* 🌟 Footer */
+.footer {
+  background: var(--md-sys-color-surface);
+  text-align: center;
+  padding: 1rem;
+  color: var(--md-sys-color-on-surface);
+  border-top: 1px solid var(--md-sys-color-outline);
+}
+
+/* 🌟 Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+  .container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

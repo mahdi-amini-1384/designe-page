@@ -8,23 +8,62 @@ body {
 }
 
 /* Header */
-.header {
-  text-align: center;
-  padding: 3rem 1.5rem 2rem;
-  background-color: var(--md-sys-color-surface);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+.ai-header {
+  background: var(--md-sys-color-surface);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.header-title {
-  font-size: 2rem;
-  font-weight: 700;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.2rem;
   color: var(--md-sys-color-primary);
-  margin-bottom: 0.5rem;
 }
 
-.header-subtitle {
-  font-size: 1.125rem;
-  opacity: 0.85;
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--md-sys-color-on-surface);
+  transition: color 0.2s;
+}
+.nav a:hover {
+  color: var(--md-sys-color-primary);
+}
+
+/* 🔹 CTA Button */
+.cta-btn {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.cta-btn:hover {
+  background: var(--md-sys-color-on-primary);
+  color: var(--md-sys-color-primary);
+  border: 1px solid var(--md-sys-color-primary);
 }
 
 /* Main */

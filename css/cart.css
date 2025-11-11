@@ -1,0 +1,162 @@
+
+@import url(./light.css);
+body {
+  font-family: "Vazirmatn", sans-serif;
+  background: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+  margin: 0;
+  padding: 0;
+}
+
+/* 🌟 Header */
+.ai-header {
+  background: var(--md-sys-color-surface);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--md-sys-color-primary);
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--md-sys-color-on-surface);
+  transition: color 0.2s;
+}
+.nav a:hover {
+  color: var(--md-sys-color-primary);
+}
+
+/* 🔹 CTA Button */
+.cta-btn {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.cta-btn:hover {
+  background: var(--md-sys-color-on-primary);
+  color: var(--md-sys-color-primary);
+  border: 1px solid var(--md-sys-color-primary);
+}
+
+
+.cart-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: var(--md-sys-color-surface-container-high);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--md-sys-color-surface);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  transition: 0.2s ease;
+}
+
+.cart-item:hover {
+  background: var(--md-sys-color-surface-container);
+}
+
+.cart-img {
+  border-radius: 12px;
+}
+
+.cart-info {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.cart-info h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--md-sys-color-on-surface);
+}
+
+.cart-info p {
+  margin: 4px 0 0;
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: 0.9rem;
+}
+
+.cart-price {
+  font-weight: 700;
+  color: var(--md-sys-color-primary);
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: var(--md-sys-color-error);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.remove-btn:hover {
+  transform: scale(1.2);
+}
+
+.cart-summary {
+  border-top: 2px solid var(--md-sys-color-outline-variant);
+  margin-top: 25px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.checkout-btn {
+  background: var(--md-sys-color-secondary);
+  color: var(--md-sys-color-on-secondary);
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  background: var(--md-sys-color-secondary-fixed-dim);
+}
